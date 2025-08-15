@@ -1,77 +1,79 @@
-.about-section {
+.games-section {
+}
+
+.games-wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
+  max-width: 375px;
+  margin: 0 auto;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 1440px;
   }
 }
 
-.about-content-wrapper {
+.games-title {
+}
+
+.games-subtitle {
+}
+
+.games-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 40px;
+  gap: 32px;
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: start;
-    gap: 126px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.about-text-wrapper {
+.games-list-item {
+  display: flex;
+  flex-direction: column;
+
   @include media(desktop) {
     max-width: 544px;
   }
 }
 
-.about-top-text {
+.games-item-title {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   color: #f3f3f3;
-  margin-bottom: 24px;
 
   @include media(desktop) {
     font-size: 20px;
   }
 }
 
-.about-middle-text {
+.games-item-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #f3f3f3;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 12px;
+  }
+}
+
+.games-item-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #f3f3f3;
-  margin-bottom: 24px;
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.about-subtitle-span {
-  font-weight: 500;
-  font-size: 18px;
-
-  @include media(desktop) {
-    font-size: 20px;
-  }
-}
-
-.about-span {
-  color: #a088cc;
-}
-
-.about-bottom-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #f3f3f3;
+  margin-top: 16px;
 
   @include media(desktop) {
     font-size: 18px;
