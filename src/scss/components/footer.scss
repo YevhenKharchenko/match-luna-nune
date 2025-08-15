@@ -1,40 +1,76 @@
 .footer {
-  background: #126fff;
 }
 
 .footer-wrapper {
   padding-top: 40px;
   padding-bottom: 16px;
-  background-image: url(../img/footer/footer-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: auto;
   max-width: 375px;
   margin: 0 auto;
 
   @include media(desktop) {
-    background-image: url(../img/footer/footer-bg-desk.png);
     max-width: 1440px;
   }
 }
 
+.footer-list-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+}
+
+.footer-socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-socials-list-item {
+}
+
+.footer-socials-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-icon {
+}
+
 .footer-nav {
   margin-bottom: 40px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-list {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 16px;
+
+  @include media(desktop) {
+    align-items: end;
+  }
 }
 
 .footer-link {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  text-align: center;
+  color: #f3f3f3;
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -47,12 +83,12 @@
 }
 
 .footer-text {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.5;
-  text-align: left;
-  color: #fff;
+  text-align: center;
+  color: #f3f3f3;
 
   @include media(desktop) {
     font-size: 12px;
