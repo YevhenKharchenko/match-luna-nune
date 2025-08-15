@@ -1,0 +1,65 @@
+.about-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-text {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #232533;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.about-services-text {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #126fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.about-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 110px;
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-item-text {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #232533;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,84 @@
+.pricing-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.pricing-list-item {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 352px;
+    min-height: 183px;
+  }
+}
+
+.pricing-item-title {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.3;
+  color: #126fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 28px;
+  }
+}
+
+.pricing-item-text {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #232533;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.pricing-item-price {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #126fff;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.pricing-text {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #232533;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
