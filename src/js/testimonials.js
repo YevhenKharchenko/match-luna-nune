@@ -14,7 +14,7 @@ testimonialsSwiper = new Swiper('.testimonials-swiper-container', {
   grabCursor: true,
   slidesPerView: 1,
   initialSlide: 0,
-  spaceBetween: 32,
+  spaceBetween: 16,
   grabCursor: true,
   allowTouchMove: true,
   speed: 500,
@@ -24,7 +24,10 @@ testimonialsSwiper = new Swiper('.testimonials-swiper-container', {
   },
   breakpoints: {
     1440: {
-      slidesPerView: 1,
+      slidesPerView: 3,
+      spaceBetween: 0,
+      grabCursor: false,
+      allowTouchMove: false,
     },
   },
   on: {

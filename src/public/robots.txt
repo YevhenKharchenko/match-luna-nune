@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://enchantedtwistpuzzle.com/sitemap.xml
+Sitemap: https://match3nune.pro/sitemap.xml
